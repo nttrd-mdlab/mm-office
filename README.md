@@ -65,8 +65,31 @@ The MM-Office dataset is split into 10 splits for convenience, and the _split in
 #### classinfo.csv 
 It contains the event name (e.g. 'stand up,' 'phone') of each of the event classes shown in ```eventinfo.csv``` and a description of what kind of event it is.
 
-## Usage
-We plan to release a DataLoader for PyTorch soon.
+
+## Requirements for sample_data_loader.py
+The following is the execution environment in which the expected operation of this program has been verified.
+### OS
+- Ubuntu 22.04.4 LTS
+
+### GPU environment
+- NVIDIA GPU V100 32GB (x4)
+- NVIDIA Driver Version == 470.239.06
+- CUDA Version == 10.1
+
+### Python library
+pytorch == 1.7.1
+torchaudio == 0.7.2
+torchvision == 0.8.2
+numpy == 1.18.1
+pandas == 1.0.0
+glob2 == 0.7
+tqdm == 4.42.0
+
+### How to use sample_data_loader
+1. Prepare the above environment
+2. Download and put MM-Office Dataset at `mm-office/`
+3. Run `. training.sh`
+
 
 ## License
 See this [license](./LICENSE.pdf) file.
